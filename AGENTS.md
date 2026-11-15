@@ -22,7 +22,7 @@ Verification is manual: play it in a browser and check the console for errors.
 No ES modules. Every file in `src/js/` is a classic script that publishes its API with
 `window.X = X` at the bottom and reads globals defined by files loaded **before** it.
 
-Script order in `src/index.html` *is* the dependency order — never reorder it:
+Script order in `src/index.html` _is_ the dependency order — never reorder it:
 
 ```
 maze.js  ->  game.js  ->  render.js  ->  main.js
@@ -74,7 +74,7 @@ Non-trivial features go through the two vendored skills rather than free-hand co
 
 - `/spec <description>` — asks clarifying questions in blocks, then writes `specs/NN-slug.md`
   (zero-padded, next free number) with `**Status:** Draft`. It never writes code.
-- `/spec-impl <NN-slug>` — refuses unless the status means *Approved*, creates branch
+- `/spec-impl <NN-slug>` — refuses unless the status means _Approved_, creates branch
   `spec-NN-slug`, then implements the numbered plan one step at a time, pausing for diff review.
 
 Rules worth preserving:
